@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script type="text/javascript" src="js/check.js"></script>
+
+</head>
+<link rel="stylesheet" href="css/index.css">
+<body background="img/Fresh.jpg">
+
+<div class="a" >
+<form name="sign" action="/login" method="post" onsubmit="return check1()">
+    <table>
+        <p><tr align="center" class="d">
+             <td colspan="2" >用户登录</td>
+        </tr></p>
+        <br>
+        <tr>
+            <td>&nbsp;&nbsp;工&nbsp;号：</td>
+            <td><input type="text" id="1" name="staffId" class="b"></td>
+        </tr>
+        <tr>
+            <td >&nbsp;&nbsp;密&nbsp;码：</td>
+            <td><input type="password" id="2" name="password" class="b" ></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <input class="c" type="submit" value="登录"/>
+                <input class="c" type="reset" value="重填"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

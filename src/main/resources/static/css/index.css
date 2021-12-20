@@ -1,0 +1,25 @@
+.a{
+    display: flex;
+    position: absolute;
+    top: 23%;
+    left: 35.5%;
+    margin: 0 auto;
+    font-size: 21px;
+    font-weight: 540;
+}
+.b{
+    height: 32px;
+    width: 245px;
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+.c{
+    width: 50px;
+    height: 30px;
+}
+.d{
+    height: 65px;
+}
+body{
+    background-size: 105%;
+}

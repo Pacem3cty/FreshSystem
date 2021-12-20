@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin index</title>
+</head>
+<body>
+
+  <br/><br/>
+  <form action="showAllLockerUnit" method="post">
+    <input type="submit" value="showAllLockerUnit"/>
+  </form>
+
+  <br/><br/>
+  <form action="create" method="post">
+    <h3>create a new locker</h3>
+    device name :<br>
+    <input type="text" name="lockerName" size="30"><br>
+    capacity    :<br>
+    <input type="text" name="capacity" size="30"><br>
+    <input type="submit" value="create" />
+  </form>
+
+  <br/>
+  <form action="remove" method="post">
+    <h3>remove a locker</h3>
+    device name :<br>
+    <input type="text" name="lockerName" size="30"><br>
+    <input type="submit" value="remove" />
+  </form>
+
+
+
+</body>
+</html>

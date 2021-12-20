@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工操作</title>
+    <script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/check.js"></script>
+    <script type="text/javascript" src="js/Operation.js"></script>
+    <script type="text/javascript" src="js/Order.js"></script>
+</head>
+
+
+<body>
+<button id="a0" >查看商品信息</button>
+<button id="a1">修改商品信息</button>
+<button id="a2" >增加商品信息</button>
+<button id="a3" >删除商品信息</button>
+<button id="printorder">查看订单信息</button>
+<button id="closeorder">关闭订单信息</button>
+<button id="updateorder">修改订单信息</button>
+
+<div id="myDiv"></div>
+<div id="myDiv2">
+    请输入你想要增加的商品信息：
+    <table >
+        <tr><td>商品ID: <input type='text' id='ids'></td></tr>
+        <tr><td>类  &nbsp; 型: <input type='text' id='type'></td></tr>
+        <tr><td>品  &nbsp; 牌: <input type='text' id='brand'></td></tr>
+        <tr><td>名  &nbsp; 称: <input type='text' id='goodsname'></td></tr>
+        <tr><td>价  &nbsp; 格: <input type='text' id='price'></td></tr>
+        <tr><td>图  &nbsp; 片: <input type='text' id='img'></td></tr>
+        <tr><td>净  &nbsp; 重: <input type='text' id='netwt'></td></tr>
+        <tr><td>数  &nbsp; 量: <input type='text' id='quantity'></td></tr>
+        <tr><td>产  &nbsp; 地: <input type='text' id='origin'></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='add'>提交</button></td>
+              </tr>
+        </table>
+</div>
+<div id="myDiv1">
+    请输入你想要修改的商品信息：
+    <table >
+        <tr><td>商品ID: <input type='text' id='id1'></td></tr>
+        <tr><td>类  &nbsp; 型: <input type='text' id='type1'></td></tr>
+        <tr><td>品  &nbsp; 牌: <input type='text' id='brand1'></td></tr>
+        <tr><td>名  &nbsp; 称: <input type='text' id='goodsname1'></td></tr>
+        <tr><td>价  &nbsp; 格: <input type='text' id='price1'></td></tr>
+        <tr><td>图  &nbsp; 片: <input type='text' id='img1'></td></tr>
+        <tr><td>净  &nbsp; 重: <input type='text' id='netwt1'></td></tr>
+        <tr><td>数  &nbsp; 量: <input type='text' id='quantity1'></td></tr>
+        <tr><td>产  &nbsp; 地: <input type='text' id='origin1'></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='update'>确认修改</button></td>
+        </tr>
+    </table>
+</div>
+<div id="myDiv3">
+    请输入你想要删除的商品ID：<input type="text" id="deleteId">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="delete">删 除</button>
+</div>
+<div id="OrderInfoDiv">
+
+</div>
+
+<div id="updateOrderInfoDiv">
+    <table border='0'>
+        <tr>
+            <td>订单编号</td>
+            <td><input name='orderId'></td>
+            <td>订单价格</td>
+            <td><input name='orderPrice'></td>
+            <td>收货号码</td>
+            <td><input name='consignNum'></td>
+            <td>收货地址</td>
+            <td><input name='consignAddress'></td>
+            <td>配送员编号</td>
+            <td><input name='deliverymanId'></td>
+            <td>是否退单</td>
+            <td><select name="isReturn">
+                <option value ="1">是</option>
+                <option value ="0">否</option>
+            </select>
+            </td>
+            <td><button id="cancelupdate">取消修改</button>            <button id="submitupdate">提交修改</button></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

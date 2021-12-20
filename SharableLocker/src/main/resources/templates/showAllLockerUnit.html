@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <table>
+    <thead>
+    <tr>
+      <th width="150" align="center">lockerId</th>
+      <th width="100" align="center">serialNum</th>
+      <th width="100" align="center">status</th>
+      <th width="150" align="center">occupyId</th>
+    </tr>
+
+    <tr th:each="lockerUnit:${allLockerUnit}">
+          <td th:text="${lockerUnit.lockerId}" align="center"></td>
+          <td th:text="${lockerUnit.serialNum}" align="center"></td>
+          <td th:text="${lockerUnit.isOccupied}" align="center"></td>
+          <td th:text="${lockerUnit.occupyId}" align="center"></td>
+<!--        <form name="lent" action="lent" method="post">-->
+<!--        <form action="#" th:action="@{lent}" th:object="${myRequest}" method="post">-->
+<!--        <form action="#" th:action="lent" th:object="${myRequest}" method="post" name="lent">-->
+<!--        <form action="${myRequest.url}" method="post">-->
+<!--        </form>-->
+<!--      </form>-->
+    </tr>
+    </thead>
+  </table>
+    please input the serial id of the locker:<br>
+    <form name="lent" action="lent" method="post">
+        Locker id:<input type="text" name="lockerId" size="30">
+        Serial id:<input type="text" name="serialNum" size="30">
+        <input type="submit" value="lent">
+    </form>
+</body>
+</html>
